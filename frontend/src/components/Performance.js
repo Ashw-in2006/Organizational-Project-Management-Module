@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getPerformance, createPerformance, getUsers } from '../services/api';
+import { getPerformance, createPerformance } from '../services/api';
 
 function Performance() {
   const [records, setRecords] = useState([]);
