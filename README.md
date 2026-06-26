@@ -114,11 +114,12 @@ organizational-project-management/
 
 ### 1. Clone the Repository
 
-```bash
+
 git clone https://github.com/Ashw-in2006/apj-project-management.git
 cd apj-project-management
-2. Backend Setup
-bash
+
+### 2. Backend Setup
+
 # Navigate to backend directory
 cd backend
 
@@ -143,8 +144,8 @@ Expected Output:
 ✅ Server running on port 5000
 📡 Test API at: http://localhost:5000
 🔧 Create sample data: POST http://localhost:5000/api/test/create-all
-3. Frontend Setup
-bash
+### 3. Frontend Setup
+
 # Open a new terminal and navigate to frontend directory
 cd frontend
 
@@ -159,10 +160,11 @@ Expected Output:
 Compiled successfully!
 You can now view frontend in the browser.
 Local: http://localhost:3000
-4. Seed Sample Data (Optional)
+
+### 4. Seed Sample Data (Optional)
 To populate the database with sample data for testing:
 
-bash
+
 # Using curl
 curl -X POST http://localhost:5000/api/test/create-all
 
@@ -201,16 +203,16 @@ GET	/api/reports	Generate reports
 Development Mode
 Terminal 1 - Backend:
 
-bash
+
 cd backend
 npm run dev
 Terminal 2 - Frontend:
 
-bash
+
 cd frontend
 npm start
 Production Mode
-bash
+
 # Build frontend
 cd frontend
 npm run build
@@ -340,7 +342,7 @@ CORS Errors
 ✅ Check if frontend is making requests to correct port
 
 Port Already in Use
-bash
+
 # Windows
 netstat -ano | findstr :5000
 taskkill /PID <PID> /F
